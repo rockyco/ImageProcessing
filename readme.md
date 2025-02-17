@@ -20,7 +20,8 @@ The repository is structured into three main folders, each representing a differ
 
 The following diagram illustrates the design concept and optimization strategies employed in this project:
 
-![Design Concept](pic/LLM-Aided FPGA Design.png)
+![LLM-Aided FPGA Design](https://github.com/user-attachments/assets/37468c37-2341-47c9-bee3-0900cb121a7c)
+
 
 ## Folder Structure
 
