@@ -1,4 +1,4 @@
-# Sobel Filter Implementations with HLS: Memory and Latency Optimization
+# LLM-Aided FPGA Design for Sobel Filter Implementations with HLS: Memory and Latency Optimization
 
 This repository contains three different implementations of the Sobel filter algorithm using High-Level Synthesis (HLS) for FPGA deployment. The implementations showcase the evolution of the design from a memory-intensive approach to a highly optimized version in terms of both memory usage and latency, leveraging LLM-based optimizations.
 
