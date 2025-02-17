@@ -1,0 +1,6 @@
+.venv/
+.vscode/
+PYNQ_Composable_Pipeline/
+sobelFilter/sobel/
+sobelFilter_opt1/proj_sobelFilter/
+sobelFilter_opt2/proj_sobelFilter/

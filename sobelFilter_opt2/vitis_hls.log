@@ -1,0 +1,48 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2022.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Xilinx/Vitis_HLS/2020.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'windows' on host 'jieleix1c2021' (Windows NT_amd64 version 6.2) on Sun Feb 16 23:00:21 +1100 2025
+INFO: [HLS 200-10] In directory 'D:/Projects/MatlabProj/OpenWLAN/ImageProcessing/sobelFilter_opt2'
+Sourcing Tcl script '.\run_hls.tcl'
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 12.5% 
+PROJ=run_hls
+INFO: [HLS 200-1510] Running: open_project -reset proj_sobelFilter 
+INFO: [HLS 200-10] Opening and resetting project 'D:/Projects/MatlabProj/OpenWLAN/ImageProcessing/sobelFilter_opt2/proj_sobelFilter'.
+WARNING: [HLS 200-40] No D:/Projects/MatlabProj/OpenWLAN/ImageProcessing/sobelFilter_opt2/proj_sobelFilter/solution1/solution1.aps file found.
+INFO: [HLS 200-1510] Running: set_top sobelFilter 
+INFO: [HLS 200-1510] Running: add_files sobelFilter.cpp 
+INFO: [HLS 200-10] Adding design file 'sobelFilter.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb sobelFilter_tb.cpp 
+INFO: [HLS 200-10] Adding test bench file 'sobelFilter_tb.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb pic_in.txt 
+INFO: [HLS 200-10] Adding test bench file 'pic_in.txt' to the project
+INFO: [HLS 200-1510] Running: open_solution -reset solution1 
+INFO: [HLS 200-10] Creating and opening solution 'D:/Projects/MatlabProj/OpenWLAN/ImageProcessing/sobelFilter_opt2/proj_sobelFilter/solution1'.
+INFO: [HLS 200-10] Cleaning up the solution database.
+WARNING: [HLS 200-40] No D:/Projects/MatlabProj/OpenWLAN/ImageProcessing/sobelFilter_opt2/proj_sobelFilter/solution1/solution1.aps file found.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7vx690tffg1761-2 
+INFO: [HLS 200-10] Setting target device to 'xc7vx690t-ffg1761-2'
+INFO: [HLS 200-1510] Running: create_clock -period 200MHz 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 12.5% 
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.625ns.
+INFO: [HLS 200-1510] Running: config_rtl -reset control 
+INFO: [HLS 200-1510] Running: csim_design 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../sobelFilter_tb.cpp in debug mode
+   Compiling ../../../../sobelFilter.cpp in debug mode
+   Generating csim.exe
+Test passed!
+The maximum depth reached by any of the 2 hls::stream() instances in the design is 307200
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 5.738 seconds; current allocated memory: 557.868 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Sun Feb 16 23:00:32 2025...

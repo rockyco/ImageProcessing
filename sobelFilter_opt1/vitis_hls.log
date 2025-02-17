@@ -1,0 +1,179 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'windows' on host 'jieleix1c2021' (Windows NT_amd64 version 6.2) on Sun Feb 16 13:27:54 +1100 2025
+INFO: [HLS 200-10] In directory 'D:/Projects/MatlabProj/OpenWLAN/ImageProcessing/sobelFilter_opt1'
+Sourcing Tcl script 'D:/Projects/MatlabProj/OpenWLAN/ImageProcessing/sobelFilter_opt1/proj_sobelFilter/solution1/cosim.tcl'
+INFO: [HLS 200-1510] Running: open_project proj_sobelFilter 
+INFO: [HLS 200-10] Opening project 'D:/Projects/MatlabProj/OpenWLAN/ImageProcessing/sobelFilter_opt1/proj_sobelFilter'.
+INFO: [HLS 200-1510] Running: set_top sobelFilter 
+INFO: [HLS 200-1510] Running: add_files sobelFilter.cpp 
+INFO: [HLS 200-10] Adding design file 'sobelFilter.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb pic_in.txt -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'pic_in.txt' to the project
+INFO: [HLS 200-1510] Running: add_files -tb sobelFilter_tb.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'sobelFilter_tb.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'D:/Projects/MatlabProj/OpenWLAN/ImageProcessing/sobelFilter_opt1/proj_sobelFilter/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.625ns.
+INFO: [HLS 200-10] Setting target device to 'xc7vx690t-ffg1761-2'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_rtl -reset=control
+INFO: [HLS 200-1510] Running: set_part xc7vx690t-ffg1761-2 
+INFO: [HLS 200-1510] Running: create_clock -period 200MHz -name default 
+INFO: [HLS 200-1510] Running: config_rtl -reset control 
+INFO: [HLS 200-1510] Running: set_clock_uncertainty 12.5% 
+INFO: [HLS 200-1510] Running: set_directive_top -name sobelFilter sobelFilter 
+INFO: [HLS 200-1510] Running: cosim_design -trace_level all 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "C:/Xilinx/Vitis_HLS/2020.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling sobelFilter.cpp_pre.cpp.tb.cpp
+   Compiling apatb_sobelFilter.cpp
+   Compiling apatb_sobelFilter_util.cpp
+   Compiling sobelFilter_tb.cpp_pre.cpp.tb.cpp
+   Compiling apatb_sobelFilter_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Test passed!
+The maximum depth reached by any of the 2 hls::stream() instances in the design is 0
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+
+D:\Projects\MatlabProj\OpenWLAN\ImageProcessing\sobelFilter_opt1\proj_sobelFilter\solution1\sim\verilog>set PATH= 
+
+D:\Projects\MatlabProj\OpenWLAN\ImageProcessing\sobelFilter_opt1\proj_sobelFilter\solution1\sim\verilog>call C:/Xilinx/Vivado/2022.2/bin/xelab xil_defaultlib.apatb_sobelFilter_top glbl -prj sobelFilter.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_0_20 -L floating_point_v7_1_15 --lib "ieee_proposed=./ieee_proposed" -s sobelFilter -debug wave 
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_sobelFilter_top glbl -prj sobelFilter.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_20 -L floating_point_v7_1_15 --lib ieee_proposed=./ieee_proposed -s sobelFilter -debug wave 
+Multi-threading is on. Using 6 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Projects/MatlabProj/OpenWLAN/ImageProcessing/sobelFilter_opt1/proj_sobelFilter/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Projects/MatlabProj/OpenWLAN/ImageProcessing/sobelFilter_opt1/proj_sobelFilter/solution1/sim/verilog/AESL_axi_s_inputImage_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_inputImage_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Projects/MatlabProj/OpenWLAN/ImageProcessing/sobelFilter_opt1/proj_sobelFilter/solution1/sim/verilog/AESL_axi_s_outputImage_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_outputImage_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Projects/MatlabProj/OpenWLAN/ImageProcessing/sobelFilter_opt1/proj_sobelFilter/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Projects/MatlabProj/OpenWLAN/ImageProcessing/sobelFilter_opt1/proj_sobelFilter/solution1/sim/verilog/sobelFilter.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_sobelFilter_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Projects/MatlabProj/OpenWLAN/ImageProcessing/sobelFilter_opt1/proj_sobelFilter/solution1/sim/verilog/sobelFilter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sobelFilter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Projects/MatlabProj/OpenWLAN/ImageProcessing/sobelFilter_opt1/proj_sobelFilter/solution1/sim/verilog/sobelFilter_lineBuffer1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sobelFilter_lineBuffer1_ram
+INFO: [VRFC 10-311] analyzing module sobelFilter_lineBuffer1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Projects/MatlabProj/OpenWLAN/ImageProcessing/sobelFilter_opt1/proj_sobelFilter/solution1/sim/verilog/sobelFilter_regslice_both.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sobelFilter_regslice_both
+INFO: [VRFC 10-311] analyzing module sobelFilter_regslice_both_w1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Projects/MatlabProj/OpenWLAN/ImageProcessing/sobelFilter_opt1/proj_sobelFilter/solution1/sim/verilog/csv_file_dump.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Projects/MatlabProj/OpenWLAN/ImageProcessing/sobelFilter_opt1/proj_sobelFilter/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Projects/MatlabProj/OpenWLAN/ImageProcessing/sobelFilter_opt1/proj_sobelFilter/solution1/sim/verilog/df_fifo_interface.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_fifo_intf' [D:/Projects/MatlabProj/OpenWLAN/ImageProcessing/sobelFilter_opt1/proj_sobelFilter/solution1/sim/verilog/df_fifo_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Projects/MatlabProj/OpenWLAN/ImageProcessing/sobelFilter_opt1/proj_sobelFilter/solution1/sim/verilog/df_fifo_monitor.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_fifo_intf' [D:/Projects/MatlabProj/OpenWLAN/ImageProcessing/sobelFilter_opt1/proj_sobelFilter/solution1/sim/verilog/df_fifo_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Projects/MatlabProj/OpenWLAN/ImageProcessing/sobelFilter_opt1/proj_sobelFilter/solution1/sim/verilog/df_process_interface.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_process_intf' [D:/Projects/MatlabProj/OpenWLAN/ImageProcessing/sobelFilter_opt1/proj_sobelFilter/solution1/sim/verilog/df_process_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Projects/MatlabProj/OpenWLAN/ImageProcessing/sobelFilter_opt1/proj_sobelFilter/solution1/sim/verilog/df_process_monitor.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'df_process_intf' [D:/Projects/MatlabProj/OpenWLAN/ImageProcessing/sobelFilter_opt1/proj_sobelFilter/solution1/sim/verilog/df_process_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Projects/MatlabProj/OpenWLAN/ImageProcessing/sobelFilter_opt1/proj_sobelFilter/solution1/sim/verilog/dump_file_agent.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Projects/MatlabProj/OpenWLAN/ImageProcessing/sobelFilter_opt1/proj_sobelFilter/solution1/sim/verilog/nodf_module_interface.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'nodf_module_intf' [D:/Projects/MatlabProj/OpenWLAN/ImageProcessing/sobelFilter_opt1/proj_sobelFilter/solution1/sim/verilog/nodf_module_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Projects/MatlabProj/OpenWLAN/ImageProcessing/sobelFilter_opt1/proj_sobelFilter/solution1/sim/verilog/nodf_module_monitor.sv" into library xil_defaultlib
+WARNING: [VRFC 10-3609] overwriting previous definition of interface 'nodf_module_intf' [D:/Projects/MatlabProj/OpenWLAN/ImageProcessing/sobelFilter_opt1/proj_sobelFilter/solution1/sim/verilog/nodf_module_interface.sv:4]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Projects/MatlabProj/OpenWLAN/ImageProcessing/sobelFilter_opt1/proj_sobelFilter/solution1/sim/verilog/sample_agent.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Projects/MatlabProj/OpenWLAN/ImageProcessing/sobelFilter_opt1/proj_sobelFilter/solution1/sim/verilog/sample_manager.sv" into library xil_defaultlib
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.sobelFilter_lineBuffer1_ram
+Compiling module xil_defaultlib.sobelFilter_lineBuffer1(DataWidt...
+Compiling module xil_defaultlib.sobelFilter_regslice_both
+Compiling module xil_defaultlib.sobelFilter
+Compiling module xil_defaultlib.fifo(DEPTH=307200,WIDTH=32)
+Compiling module xil_defaultlib.AESL_axi_s_inputImage_V
+Compiling module xil_defaultlib.AESL_axi_s_outputImage_V
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.dataflow_monitor
+Compiling module xil_defaultlib.apatb_sobelFilter_top
+Compiling module work.glbl
+Built simulation snapshot sobelFilter
+
+****** xsim v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/sobelFilter/xsim_script.tcl
+# xsim {sobelFilter} -view {{sobelFilter_dataflow_ana.wcfg}} -tclbatch {sobelFilter.tcl} -protoinst {sobelFilter.protoinst}
+INFO: [Wavedata 42-565] Reading protoinst file sobelFilter.protoinst
+Time resolution is 1 ps
+open_wave_config sobelFilter_dataflow_ana.wcfg
+source sobelFilter.tcl
+## log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set outputImage_group [add_wave_group outputImage(axis) -into $coutputgroup]
+## add_wave /apatb_sobelFilter_top/AESL_inst_sobelFilter/outputImage_V_TREADY -into $outputImage_group -color #ffff00 -radix hex
+## add_wave /apatb_sobelFilter_top/AESL_inst_sobelFilter/outputImage_V_TVALID -into $outputImage_group -color #ffff00 -radix hex
+## add_wave /apatb_sobelFilter_top/AESL_inst_sobelFilter/outputImage_V_TDATA -into $outputImage_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set inputImage_group [add_wave_group inputImage(axis) -into $cinputgroup]
+## add_wave /apatb_sobelFilter_top/AESL_inst_sobelFilter/inputImage_V_TREADY -into $inputImage_group -color #ffff00 -radix hex
+## add_wave /apatb_sobelFilter_top/AESL_inst_sobelFilter/inputImage_V_TVALID -into $inputImage_group -color #ffff00 -radix hex
+## add_wave /apatb_sobelFilter_top/AESL_inst_sobelFilter/inputImage_V_TDATA -into $inputImage_group -radix hex
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_sobelFilter_top/AESL_inst_sobelFilter/ap_rst_n -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_sobelFilter_top/AESL_inst_sobelFilter/ap_clk -into $clockgroup
+## set testbenchgroup [add_wave_group "Test Bench Signals"]
+## set tbinternalsiggroup [add_wave_group "Internal Signals" -into $testbenchgroup]
+## set tb_simstatus_group [add_wave_group "Simulation Status" -into $tbinternalsiggroup]
+## set tb_portdepth_group [add_wave_group "Port Depth" -into $tbinternalsiggroup]
+## add_wave /apatb_sobelFilter_top/AUTOTB_TRANSACTION_NUM -into $tb_simstatus_group -radix hex
+## add_wave /apatb_sobelFilter_top/ready_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_sobelFilter_top/done_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_sobelFilter_top/ap_c_n_tvin_trans_num_inputImage_V -into $tb_simstatus_group -radix hex
+## add_wave /apatb_sobelFilter_top/ap_c_n_tvout_trans_num_outputImage_V -into $tb_simstatus_group -radix hex
+## add_wave /apatb_sobelFilter_top/LENGTH_inputImage_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_sobelFilter_top/LENGTH_outputImage_V -into $tb_portdepth_group -radix hex
+## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
+## set tb_outputImage_group [add_wave_group outputImage(axis) -into $tbcoutputgroup]
+## add_wave /apatb_sobelFilter_top/outputImage_V_TREADY -into $tb_outputImage_group -color #ffff00 -radix hex
+## add_wave /apatb_sobelFilter_top/outputImage_V_TVALID -into $tb_outputImage_group -color #ffff00 -radix hex
+## add_wave /apatb_sobelFilter_top/outputImage_V_TDATA -into $tb_outputImage_group -radix hex
+## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
+## set tb_inputImage_group [add_wave_group inputImage(axis) -into $tbcinputgroup]
+## add_wave /apatb_sobelFilter_top/inputImage_V_TREADY -into $tb_inputImage_group -color #ffff00 -radix hex
+## add_wave /apatb_sobelFilter_top/inputImage_V_TVALID -into $tb_inputImage_group -color #ffff00 -radix hex
+## add_wave /apatb_sobelFilter_top/inputImage_V_TDATA -into $tb_inputImage_group -radix hex
+## save_wave_config sobelFilter.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "113000"
+// RTL Simulation : 1 / 1 [100.00%] @ "6185733000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 6185752500 ps : File "D:/Projects/MatlabProj/OpenWLAN/ImageProcessing/sobelFilter_opt1/proj_sobelFilter/solution1/sim/verilog/sobelFilter.autotb.v" Line 198
+run: Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 271.879 ; gain = 0.000
+## quit
+INFO: xsimkernel Simulation Memory Usage: 48512 KB (Peak: 48512 KB), Simulation CPU Usage: 27968 ms
+INFO: [Common 17-206] Exiting xsim at Sun Feb 16 13:29:26 2025...
+INFO: [COSIM 212-316] Starting C post checking ...
+Test passed!
+The maximum depth reached by any of the 2 hls::stream() instances in the design is 0
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 92.088 seconds; current allocated memory: 564.398 MB.
