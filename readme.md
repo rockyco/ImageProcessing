@@ -20,7 +20,7 @@ The repository is structured into three main folders, each representing a differ
 
 The following diagram illustrates the design concept and optimization strategies employed in this project:
 
-![Design Concept](https://github.com/rockyco/FPGA_ImageProcessing/blob/main/design_concept.png)
+![Design Concept](pic/LLM-Aided FPGA Design.png)
 
 ## Folder Structure
 
